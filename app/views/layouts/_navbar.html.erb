@@ -1,15 +1,23 @@
 <nav class="navbar is-info" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <i class="far fa-newspaper newspaper-yellow"></i> <span>NEWS</span>
-    </a>
+	  <%= link_to root_path, :class => 'navbar-item' do%>
+	  <i class="far fa-newspaper newspaper-yellow"></i> <span>NEWS</span>
+	  <% end %>
+    
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
+    
   </div>
+  <div class="navbar-start">
+        <a class="navbar-item">
+          <i class="fas fa-bolt"></i>
+        </a>
+      <a class="navbar-item">
+		  <i class="fas fa-map-marker-alt"></i>
+	  </a>
+      <a class="navbar-item">
+        <i class="fas fa-search"></i>
+      </a>
+	  </div>
   <div class="navbar-end" id="navbarEnd">
         <a class="navbar-item">
           News
@@ -19,9 +27,15 @@
         Games
       </a>
 	 <div class="buttons" style="padding:0 5px;">
-	           <a class="button is-primary">
+	           <a class="button is-primary is-inverted is-outlined">
 	             <strong>Subscribe</strong>
 	           </a>
 		   </div>
 	  </div>
+	  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
 </nav>

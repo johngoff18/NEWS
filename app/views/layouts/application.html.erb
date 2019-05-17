@@ -3,7 +3,7 @@
   <head>
 	  <meta charset="utf-8">
 	      <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>News</title>
+    <title>NEWS †</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -16,22 +16,14 @@
   <body> 
 	  <%= render 'layouts/navbar' %> 
 	  
-	  
-	  <section class="hero is-info is-fullheight-with-navbar">
-	    <div class="hero-body">
-	      <div class="container">
-	        <p class="title montserrat over9000">
-	          <i class="far fa-newspaper newspaper-yellow"></i> <span>NEWS</span>
-	        </p>
-	      </div>
-	    </div>
-	  </section>
+	  <%= content_for :page_header %>
 	  
 	  
 	  <br>
 	  <div class="container"> 
 		  <div class="columns"> 
 			  <div class="column">  
+				  <%= render 'layouts/breadcrumb'%>
 				  <%= yield %> 
 				  <%= render 'layouts/progress'%>
 			  </div> 
