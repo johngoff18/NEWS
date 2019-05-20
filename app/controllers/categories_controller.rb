@@ -2,6 +2,9 @@ class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
 before_action :authenticate_user!
 
+add_breadcrumb "Home", :root_path
+add_breadcrumb "Categories", :categories_path
+
   # GET /categories
   # GET /categories.json
   def index
@@ -11,6 +14,7 @@ before_action :authenticate_user!
   # GET /categories/1
   # GET /categories/1.json
   def show
+    
   end
 
   # GET /categories/new

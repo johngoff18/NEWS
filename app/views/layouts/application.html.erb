@@ -23,8 +23,8 @@
 	  <div class="container"> 
 		  <div class="columns"> 
 			  <div class="column">  
-				  <p class="notice"><%= notice %></p>
-				  <p class="alert"><%= alert %></p>
+				  <%= render 'layouts/notice'%>
+				  
 				  <%= render 'layouts/breadcrumb'%>
 				  <%= yield %> 
 				  <%= render 'layouts/progress'%>

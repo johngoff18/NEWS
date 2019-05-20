@@ -7,30 +7,25 @@
   <div class="card-content">
     <div class="content">
 		
-	  <div class="control has-icons-left">
-	    <input class="input" type="search" placeholder="Search">
+	  
+		  <%= search_form_for @q do |f|%>
+		  
+		  <div class="control has-icons-left">
+	    <%= f.search_field :title_or_content_cont, class:"input" %>
 	    <span class="icon is-small is-left">
 	      <i class="fas fa-search"></i>
 	    </span>
 	  </div>
-	  <a class="button is-fullwidth is-info" style="margin-top:10px;">Search</a>
+	  <br>
+	  <%= f.submit class:"button is-fullwidth is-info"%>
+	  <% end %>
     </div>
   </div>
 </div>
 
 <br>
 
-<article class="message">
-  <div class="message-body">
-	 <div class="tags">
-		 <% @categories.each do |category|%>
-		 <%= cache category do %>
-	   <span class="tag is-warning"><%= category.name%></span>
-	   <%end%>
-	   <%end%>
-	 </div>
-  </div>
-</article>
+<%= render 'layouts/categories'%>
 
 
 

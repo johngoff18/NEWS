@@ -45,6 +45,10 @@ body {
 	background:url('map.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
+.stack {
+	background:url('stack.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
 .over9000 {
 	font-weight:900 !important;
 	font-size:64pt;

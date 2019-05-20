@@ -10,6 +10,8 @@ gem 'sqlite3'
 gem 'devise'
 gem 'carrierwave', '~> 1.0'
 gem 'react-rails'
+gem 'ransack'
+gem 'breadcrumbs_on_rails'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
