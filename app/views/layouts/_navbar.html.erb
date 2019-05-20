@@ -8,12 +8,15 @@
     
   </div>
   <div class="navbar-start">
-        <a class="navbar-item">
-          <i class="fas fa-bolt"></i>
-        </a>
-      <a class="navbar-item">
-		  <i class="fas fa-map-marker-alt"></i>
-	  </a>
+  
+		
+  	  <%= link_to welcome_weather_path, :class => 'navbar-item' do%>
+  	  <i class="fas fa-bolt"></i>
+  	  <% end %>
+    	  <%= link_to welcome_map_path, :class => 'navbar-item' do%>
+    	  <i class="fas fa-map-marker-alt"></i>
+    	  <% end %>
+    
       <a class="navbar-item">
         <i class="fas fa-search"></i>
       </a>

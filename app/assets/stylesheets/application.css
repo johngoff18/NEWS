@@ -15,7 +15,8 @@
  */
 
 body {
-/*	background-image: url('128-168.jpg') !important;*/
+	background:url('star-search.jpg') no-repeat center center fixed;
+	background-size: cover;
 }
 .montserrat {
 	font-family: 'Montserrat', sans-serif;
@@ -27,11 +28,28 @@ body {
 .navbar-brand {
 	font-weight:900 !important;
 }
-.hero {
+.splash {
 	background:url('splash.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+.cowork {
+	background:url('cowork.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+.weather1 {
+	background:url('weather1.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+.map {
+	background:url('map.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
 .over9000 {
 	font-weight:900 !important;
 	font-size:64pt;
+}
+
+#map {
+	height:500px;
 }

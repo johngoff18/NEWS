@@ -1,2 +1,15 @@
-<h1>Welcome#map</h1>
-<p>Find me in app/views/welcome/map.html.erb</p>
+<% content_for :page_header do %>
+	  <section class="hero is-info map">
+	    <div class="hero-body">
+	      <div class="container">
+	        <p class="title montserrat over9000">
+	          <span>MAP</span>
+	        </p>
+	      </div>
+	    </div>
+	  </section>
+	
+<% end %>
+
+
+<%= render 'layouts/google_map'%>
