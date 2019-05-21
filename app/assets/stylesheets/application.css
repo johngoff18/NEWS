@@ -49,9 +49,21 @@ body {
 	background:url('stack.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
+
+.fashion {
+	background:url('fashion.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+.travel {
+	background:url('travel.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
 .over9000 {
 	font-weight:900 !important;
 	font-size:64pt;
+}
+.pink {
+	color:#FFC0CB !important;
 }
 
 #map {

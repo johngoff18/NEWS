@@ -19,4 +19,12 @@ class WelcomeController < ApplicationController
     add_breadcrumb "Weather", :welcome_index_path
   end
   
+  def fashion
+    add_breadcrumb "Fashion", :welcome_fashion_path
+  end
+  
+  def travel
+    add_breadcrumb "Travel", :welcome_travel_path
+  end
+  
 end
