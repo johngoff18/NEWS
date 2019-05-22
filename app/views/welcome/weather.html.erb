@@ -1,15 +1,23 @@
 <% content_for :page_header do %>
-	  <section class="hero is-info weather1">
+	  <section class="hero is-info is-fullheight-with-navbar hurricane">
 	    <div class="hero-body">
 	      <div class="container">
-	        <p class="title montserrat over9000">
-	          <i class="fas fa-cloud"></i>  <span>WEATHER</span>
-	        </p>
+			  <div class="columns">
+			  	<div class="column"></div>
+			  	<div class="column">
+			  		<%= render 'layouts/weather_widget'%>
+			  	</div>
+			  	<div class="column"></div>
+			  </div>
+	       
 	      </div>
 	    </div>
+		
 	  </section>
-	
+	 
 <% end %>
 
 
-<%= render 'layouts/weather_widget'%>
+
+
+

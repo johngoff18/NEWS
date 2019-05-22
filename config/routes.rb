@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'welcome/map'
   get 'welcome/fashion'
   get 'welcome/travel'
+  get 'welcome/subscribe'
   
   root 'welcome#index'
 end

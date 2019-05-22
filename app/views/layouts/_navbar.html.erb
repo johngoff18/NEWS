@@ -1,17 +1,16 @@
 <nav class="navbar is-info" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
+  <div class="navbar-brand is-clearfixed">
 	  <%= link_to root_path, :class => 'navbar-item' do%>
 	  <i class="far fa-newspaper newspaper-yellow"></i> <span>NEWS</span>
 	  <% end %>
   </div>
-  <div class="is-clearfixed"></div>
-  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"  data-target="navMenu">
+  <a role="button" class="navbar-burger is-clearfixed" aria-label="menu" aria-expanded="false"  data-target="navMenu">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
-  <div class="navbar-menu is-pull-right">
-  <div class="navbar-start is-active" id="navMenu" >
+  <div class="navbar-menu">
+  <div class="navbar-start" id="navMenu" >
   
 		
   	  <%= link_to welcome_weather_path, :class => 'navbar-item' do%>
@@ -21,22 +20,24 @@
     	  <i class="fas fa-map-marker-alt"></i>
     	  <% end %>
     
-      <a class="navbar-item">
+    <%= link_to welcome_search_path, :class => 'navbar-item' do%>
         <i class="fas fa-search"></i>
-      </a>
+        <% end %>
+      
 	  </div>
   <div class="navbar-end" id="navbarEnd">
         <a class="navbar-item">
-          News
+          <%= link_to "News", root_path, :class => 'navbar-item' %>
         </a>
       
       <a class="navbar-item">
-        Games
+        Puzzles
       </a>
 	 <div class="buttons" style="padding:0 5px;">
-	           <a class="button is-primary is-inverted is-outlined">
-	             <strong>Subscribe</strong>
-	           </a>
+    <%= link_to welcome_subscribe_path, :class => 'button is-primary is-inverted is-outlined' do%>
+<strong>Subscribe</strong>
+    <% end %>
+	         
 		   </div>
 	  </div>
 	  </div>

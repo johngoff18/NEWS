@@ -26,5 +26,10 @@ class WelcomeController < ApplicationController
   def travel
     add_breadcrumb "Travel", :welcome_travel_path
   end
+
+  def subscribe
+    add_breadcrumb "Subscribe", :welcome_subscribe_path
+    
+  end
   
 end

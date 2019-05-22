@@ -1,2 +1,43 @@
-<h1>Welcome#search</h1>
-<p>Find me in app/views/welcome/search.html.erb</p>
+<% content_for :page_header do %>
+	  <section class="hero is-info is-fullheight-with-navbar stack">
+	    <div class="hero-body">
+	      <div class="container">
+			  <div class="columns">
+				  <div class="column">
+				  </div>
+				  <div class="column">
+		  	        <div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Search
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+		
+	  
+		  <%= search_form_for @q do |f|%>
+		  
+		  <div class="control has-icons-left">
+	    <%= f.search_field :title_or_content_cont, class:"input" %>
+	    <span class="icon is-small is-left">
+	      <i class="fas fa-search"></i>
+	    </span>
+	  </div>
+	  <br>
+	  <%= f.submit class:"button is-fullwidth is-info"%>
+	  <% end %>
+    </div>
+  </div>
+</div>
+				  </div>
+				  <div class="column">
+				  </div>
+			  </div>
+	       
+	      </div>
+	    </div>
+		
+	  </section>
+	 
+<% end %>

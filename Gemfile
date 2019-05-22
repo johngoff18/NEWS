@@ -13,6 +13,9 @@ gem 'react-rails'
 gem 'ransack'
 gem 'breadcrumbs_on_rails'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+group :development do
+  gem 'rails_real_favicon'
+end
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets

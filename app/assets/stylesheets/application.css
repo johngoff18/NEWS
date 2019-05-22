@@ -58,6 +58,10 @@ body {
 	background:url('travel.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
+.hurricane {
+	background:url('hurricane.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
 .over9000 {
 	font-weight:900 !important;
 	font-size:64pt;
@@ -67,5 +71,5 @@ body {
 }
 
 #map {
-	height:500px;
+	height:800px;
 }

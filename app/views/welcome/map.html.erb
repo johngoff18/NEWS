@@ -1,15 +1,14 @@
 <% content_for :page_header do %>
-	  <section class="hero is-info map">
+	  <section class="hero is-info is-fullheight-with-navbar map">
 	    <div class="hero-body">
 	      <div class="container">
-	        <p class="title montserrat over9000">
-	          <i class="fas fa-map"></i>  <span>MAP</span>
-	        </p>
+			  <%= render 'layouts/google_map' %>
+	       
 	      </div>
 	    </div>
+		
 	  </section>
-	
+	 
 <% end %>
 
 
-<%= render 'layouts/google_map'%>
