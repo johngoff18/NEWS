@@ -15,8 +15,8 @@
  */
 
 body {
-	background:url('star-search.jpg') no-repeat center center fixed;
-	background-size: cover;
+	/*background:url('star-search.jpg') no-repeat center center fixed;
+	background-size: cover;*/
 }
 .montserrat {
 	font-family: 'Montserrat', sans-serif;
@@ -68,6 +68,10 @@ body {
 }
 .pink {
 	color:#FFC0CB !important;
+}
+
+footer {
+	background-color: #ecf0f1 !important;
 }
 
 #map {
