@@ -1,5 +1,5 @@
 <% content_for :page_header do %>
-	  <section class="hero is-info is-fullheight-with-navbar splash">
+	  <section class="hero is-info is-fullheight-with-navbar splash" style="margin-top: 52px;">
 	    <div class="hero-body">
 	      <div class="container">
 	        <p class="title montserrat over9000">
@@ -13,8 +13,8 @@
 	  <section class="hero is-info is-fullheight-with-navbar cowork">
 	    <div class="hero-body">
 	      <div class="container">
-	        <p class="title montserrat over9000">
-	         <i class="fas fa-comments"></i> <span>Community Currated News for the 21st Century</span>
+	        <p class="title montserrat over9000"  style="font-size:2vw;">
+	         <i class="fas fa-comments"></i> <span >Community Currated News for the 21st Century</span>
 	        </p>
 	      </div>
 	    </div>
@@ -149,23 +149,11 @@
 	          Become An Author
 	          <br>
 	         
-	          <a class="button is-info is-outlined is-large">Get Started</a>
+	          <a class="button is-info is-outlined is-large">Sign Up Now</a>
 	        </p>
 	      </div>
 	    </div>
 		
 	  </section>
-	   <section class="hero is-info pink-bg">
-	    <div class="hero-body">
-	      <div class="container">
-	        <p class="title montserrat over9000">
-	          <span class=" is-pulled-left">Advertise With Us</span>
-	          
-	         
-	          <a class="button is-info is-outlined is-large is-pulled-right" style="margin: 15px 0;">Get Started</a>
-	        </p>
-	      </div>
-	    </div>
-		
-	  </section>
+	   <%= render 'layouts/advertise_with_us' %>
 <% end %>
