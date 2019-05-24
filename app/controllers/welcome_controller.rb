@@ -3,6 +3,7 @@ class WelcomeController < ApplicationController
   add_breadcrumb "Welcome", :welcome_index_path
   before_action :load_articles
   
+  
   def index
   end
 
@@ -35,5 +36,7 @@ class WelcomeController < ApplicationController
     def load_articles
       @articles = Article.where("featured = 1").order('updated_at DESC').last(6)
     end
+
+    
 
 end

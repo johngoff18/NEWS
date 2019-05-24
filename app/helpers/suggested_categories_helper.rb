@@ -1,0 +1,2 @@
+module SuggestedCategoriesHelper
+end

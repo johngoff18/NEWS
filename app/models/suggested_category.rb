@@ -1,0 +1,2 @@
+class SuggestedCategory < ApplicationRecord
+end

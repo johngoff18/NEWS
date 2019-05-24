@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :image_posts
+  resources :obituaries
+  resources :suggested_categories
+  resources :email_subscriptions
+  resources :search_histories
   devise_for :users
   resources :authors
   resources :articles

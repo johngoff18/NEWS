@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @suggested_category.category %>
+</p>
+
+<p>
+  <strong>Approved:</strong>
+  <%= @suggested_category.approved %>
+</p>
+
+<%= link_to 'Edit', edit_suggested_category_path(@suggested_category) %> |
+<%= link_to 'Back', suggested_categories_path %>
