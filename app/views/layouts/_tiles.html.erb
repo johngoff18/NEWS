@@ -1,6 +1,6 @@
-<div class="columns">
+<div class="columns is-multiline">
 	<% @image_posts.each do |image_post| %>
-  <div class="column">
+  <div class="column is-4">
     <figure class="image is-2by1"><%= image_tag(image_post.image_url)%></figure>
   </div>
   <% end %>
