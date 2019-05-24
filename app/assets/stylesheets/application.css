@@ -17,6 +17,7 @@
 body {
 	/*background:url('star-search.jpg') no-repeat center center fixed;
 	background-size: cover;*/
+	padding-top: 52px;
 }
 .black {
 	color: #000000 !important;

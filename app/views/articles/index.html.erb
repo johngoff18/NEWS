@@ -8,7 +8,7 @@
       <th>Title</th>
       <th>Content</th>
       <th>Category</th>
-      <th colspan="1"></th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
@@ -16,11 +16,12 @@
     <% @articles.each do |article| %>
       <tr>
         <td><%= link_to article.title, article %></td>
-        <td><%= article.content %></td>
+        <td><%= article.content.truncate_words(10) %></td>
    
 
         <td><%= article.category.name %></td>
         <td><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td><%= link_to 'Show', article_path(article) %></td>
       </tr>
     <% end %>
   </tbody>

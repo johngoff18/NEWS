@@ -1,28 +1,12 @@
 <div class="columns">
+	<% @image_posts.each do |image_post| %>
   <div class="column">
-    <figure class="image is-2by1"><%= image_tag('jump.jpg')%></figure>
+    <figure class="image is-2by1"><%= image_tag(image_post.image_url)%></figure>
   </div>
-  <div class="column">
-    <figure class="image is-2by1"><%= image_tag('map.jpg')%></figure>
-  </div>
-  <div class="column">
-    <figure class="image is-2by1"><%= image_tag('stack.jpg')%></figure>
-  </div>
+  <% end %>
+  
   
 </div>
 
-
-<div class="columns">
-  <div class="column">
-    <figure class="image is-2by1"><%= image_tag('jump.jpg')%></figure>
-  </div>
-  <div class="column">
-    <figure class="image is-2by1"><%= image_tag('map.jpg')%></figure>
-  </div>
-  <div class="column">
-    <figure class="image is-2by1"><%= image_tag('stack.jpg')%></figure>
-  </div>
-  
-</div>
 
 <br>

@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all.where("approved = 1")
+    @articles = Article.where("approved = 1")
   end
 
   # GET /articles/1
