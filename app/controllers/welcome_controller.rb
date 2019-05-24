@@ -1,22 +1,21 @@
 class WelcomeController < ApplicationController
   add_breadcrumb "Home", :root_path
   add_breadcrumb "Welcome", :welcome_index_path
-  
+  before_action :load_articles
   
   def index
-    @articles = Article.where("featured = 1").order('updated_at DESC').last(5)
   end
 
   def search
-    
+    add_breadcrumb "Search", :welcome_search_path
   end
   
   def map
-    add_breadcrumb "Map", :welcome_index_path
+    add_breadcrumb "Map", :welcome_map_path
   end
   
   def weather
-    add_breadcrumb "Weather", :welcome_index_path
+    add_breadcrumb "Weather", :welcome_weather_path
   end
   
   def fashion
@@ -32,4 +31,9 @@ class WelcomeController < ApplicationController
     
   end
   
+  private
+    def load_articles
+      @articles = Article.where("featured = 1").order('updated_at DESC').last(6)
+    end
+
 end

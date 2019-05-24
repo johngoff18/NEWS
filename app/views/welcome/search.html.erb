@@ -37,7 +37,57 @@
 	       
 	      </div>
 	    </div>
-		
+		<div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+          <div class="container">
+            <ul>
+              <li>
+                <a>Featured</a>
+              </li>
+              <li>
+                <a>Technology</a>
+              </li>
+              <li>
+                <%= link_to "Fashion", welcome_fashion_path %>
+              </li>
+              <li>
+                <a>Travel</a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
 	  </section>
 	 
 <% end %>
+
+<div class="columns">
+    <% @articles.each do |article| %>
+      <div class="column">
+	  
+	  <div class="card">
+	    <div class="card-image">
+	      <figure class="image is-4by3">
+	         <%= image_tag(article.thumbnail.url)%>
+	      </figure>
+	    </div>
+	    <div class="card-content">
+	      <div class="media">
+	        <div class="media-content">
+	          <p class="title is-4"><%= article.title %></p>
+	          <p class="subtitle is-6"><%= article.category.name %></p>
+	        </div>
+	      </div>
+
+	      <div class="content">
+	        <%= article.content.truncate_words(10) %>
+			<%= link_to 'View More' , article_path(article)%>
+	        <br>
+	        <time datetime="2016-1-1"><%= article.updated_at.strftime('%b %e, %Y') %></time>
+	      </div>
+	    </div>
+	  </div>
+    </div>
+<% end %>
+</div>

@@ -18,6 +18,9 @@ body {
 	/*background:url('star-search.jpg') no-repeat center center fixed;
 	background-size: cover;*/
 }
+.black {
+	color: #000000 !important;
+}
 .montserrat {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -62,6 +65,14 @@ body {
 	background:url('hurricane.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
+.workspace {
+	background:url('workspace.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+.advertise {
+	background:url('advertise.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
 .over9000 {
 	font-weight:900 !important;
 	font-size:64pt;
@@ -69,10 +80,10 @@ body {
 .pink {
 	color:#FFC0CB !important;
 }
-
-footer {
-	background-color: #ecf0f1 !important;
+.pink-bg {
+	background-color:#FFC0CB !important;
 }
+
 
 #map {
 	height:800px;

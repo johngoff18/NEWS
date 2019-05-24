@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   # before_action :authenticate_user!
+  add_breadcrumb "Home", :root_path
+  add_breadcrumb "Articles", :articles_path
 
   # GET /articles
   # GET /articles.json
