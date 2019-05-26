@@ -1,10 +1,13 @@
 class ObituariesController < ApplicationController
   before_action :set_obituary, only: [:show, :edit, :update, :destroy]
-
+  layout 'layouts/admin'
+add_breadcrumb "Home", :root_path
+  add_breadcrumb "Obituaries", :obituaries_path
   # GET /obituaries
   # GET /obituaries.json
   def index
     @obituaries = Obituary.all
+    add_breadcrumb "All"
   end
 
   # GET /obituaries/1

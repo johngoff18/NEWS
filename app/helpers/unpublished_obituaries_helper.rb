@@ -1,0 +1,2 @@
+module UnpublishedObituariesHelper
+end

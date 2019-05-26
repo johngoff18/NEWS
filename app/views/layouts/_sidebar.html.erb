@@ -79,6 +79,7 @@
   <div class="card-content">
     <div class="content">
     	<% @obituaries.each do |obituary| %>
+    	<% cache obituary do %>
 		<div class="media">
 	        <div class="media-left">
 	          <figure class="image is-48x48">
@@ -90,6 +91,7 @@
 	          <p class="subtitle is-6"><%= obituary.death_date.strftime('%b %e, %Y') %></p>
 	        </div>
 	      </div>
+	      <% end %>
     	<% end %>
 	  
 		 

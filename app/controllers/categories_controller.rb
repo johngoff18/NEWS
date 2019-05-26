@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
 # before_action :authenticate_user!
-
+layout 'layouts/admin'
 add_breadcrumb "Home", :root_path
 add_breadcrumb "Categories", :categories_path
 

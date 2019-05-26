@@ -1,6 +1,6 @@
 class ImagePostsController < ApplicationController
   before_action :set_image_post, only: [:show, :edit, :update, :destroy]
-
+layout 'layouts/admin'
   # GET /image_posts
   # GET /image_posts.json
   def index

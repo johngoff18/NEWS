@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @unpublished_image_post.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @unpublished_image_post.description %>
+</p>
+
+<p>
+  <strong>Thumbnail url:</strong>
+  <%= @unpublished_image_post.thumbnail_url %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @unpublished_image_post.status %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @unpublished_image_post.comments %>
+</p>
+
+<%= link_to 'Edit', edit_unpublished_image_post_path(@unpublished_image_post) %> |
+<%= link_to 'Back', unpublished_image_posts_path %>

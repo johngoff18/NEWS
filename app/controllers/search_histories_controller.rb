@@ -1,6 +1,6 @@
 class SearchHistoriesController < ApplicationController
   before_action :set_search_history, only: [:show, :edit, :update, :destroy]
-
+layout 'layouts/admin'
   # GET /search_histories
   # GET /search_histories.json
   def index

@@ -1,8 +1,11 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Search Histories</h1>
-
-<table>
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Search Histories
+    </p>
+  </header>
+  <div class="card-content">
+    <table class="table is-bordered">
   <thead>
     <tr>
       <th>Search term</th>
@@ -16,7 +19,7 @@
         <td><%= search_history.search_term %></td>
         <td><%= link_to 'Show', search_history %></td>
         <td><%= link_to 'Edit', edit_search_history_path(search_history) %></td>
-        <td><%= link_to 'Destroy', search_history, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      
       </tr>
     <% end %>
   </tbody>
@@ -25,3 +28,8 @@
 <br>
 
 <%= link_to 'New Search History', new_search_history_path %>
+
+  </div>
+</div>
+<h1></h1>
+

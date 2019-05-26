@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :unpublished_obituaries
+  resources :unpublished_image_posts
+  resources :unpublished_articles
+  resources :user_logs
   resources :image_posts
   resources :obituaries
   resources :suggested_categories

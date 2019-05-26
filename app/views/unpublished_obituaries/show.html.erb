@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @unpublished_obituary.name %>
+</p>
+
+<p>
+  <strong>Death date:</strong>
+  <%= @unpublished_obituary.death_date %>
+</p>
+
+<p>
+  <strong>Thumbnail url:</strong>
+  <%= @unpublished_obituary.thumbnail_url %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @unpublished_obituary.status %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @unpublished_obituary.comments %>
+</p>
+
+<%= link_to 'Edit', edit_unpublished_obituary_path(@unpublished_obituary) %> |
+<%= link_to 'Back', unpublished_obituaries_path %>

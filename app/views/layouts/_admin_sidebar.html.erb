@@ -1,0 +1,76 @@
+<aside class="is-narrow-mobile is-fullheight section is-hidden-mobile">
+    <p class="menu-label is-hidden-touch">Navigation</p>
+    <ul class="menu-list">
+ 
+      <li>
+        <a href="#" class="">
+          <span class="icon"><i class="fa fa-home"></i></span> Home
+        </a>
+      </li>
+      <li>
+        <%= link_to categories_path do %>
+          <span class="icon"><i class="fa fa-table"></i></span> Categories
+         <% end %>
+      </li>
+      <li>
+        <%= link_to articles_path do %>
+          <span class="icon"><i class="fa fa-search"></i></span> Articles
+         <% end %>
+      </li>
+      <li>
+        <%= link_to image_posts_path do %>
+          <span class="icon"><i class="fas fa-users"></i></span> Image Posts
+         <% end %>
+      </li>
+      <li>
+        <%= link_to obituaries_path do %>
+          <span class="icon"><i class="fas fa-skull-crossbones"></i></span> Obituaries
+         <% end %>
+      </li>
+    </ul>
+    <hr>
+    <ul class="menu-list">
+      <li>
+        <%= link_to suggested_categories_path do %>
+          <span class="icon"><i class="fa fa-table"></i></span> Suggested Categories
+        <% end %>
+        
+      </li>
+      <li>
+        <%= link_to unpublished_articles_path do %>
+          <span class="icon"><i class="fa fa-table"></i></span> Unpublished Articles  
+        <% end %>
+        
+      </li>
+      <li>
+        <%= link_to unpublished_image_posts_path do %>
+          <span class="icon"><i class="fa fa-image"></i></span> Unpublished Image Posts
+         <% end %>
+      </li>
+      <li>
+        <%= link_to unpublished_obituaries_path do %>
+          <span class="icon"><i class="fas fa-skull-crossbones"></i></span> Unpublished Obituaries
+         <% end %>
+      </li>
+    </ul>
+    <hr>
+    <ul class="menu-list">
+ 
+      <li>
+        <%= link_to email_subscriptions_path do %>
+          <span class="icon"><i class="fas fa-envelope-square"></i></span> Email Subscriptions  
+        <% end %>
+        
+      </li>
+      <li>
+        <%= link_to search_histories_path do %>
+          <span class="icon"><i class="fa fa-search"></i></span> Search History
+         <% end %>
+      </li>
+      <li>
+        <%= link_to user_logs_path do %>
+          <span class="icon"><i class="fas fa-users"></i></span> User Log
+         <% end %>
+      </li>
+    </ul>
+  </aside>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_24_120829) do
+ActiveRecord::Schema.define(version: 2019_05_25_032150) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -68,6 +68,43 @@ ActiveRecord::Schema.define(version: 2019_05_24_120829) do
   create_table "suggested_categories", force: :cascade do |t|
     t.string "category"
     t.boolean "approved"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "unpublished_articles", force: :cascade do |t|
+    t.string "title"
+    t.text "content"
+    t.integer "status"
+    t.text "comments"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "unpublished_image_posts", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "thumbnail_url"
+    t.integer "status"
+    t.text "comments"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "unpublished_obituaries", force: :cascade do |t|
+    t.string "name"
+    t.text "content"
+    t.date "death_date"
+    t.string "thumbnail_url"
+    t.integer "status"
+    t.text "comments"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_logs", force: :cascade do |t|
+    t.string "user"
+    t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

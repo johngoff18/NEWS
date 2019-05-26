@@ -1,6 +1,6 @@
 class EmailSubscriptionsController < ApplicationController
   before_action :set_email_subscription, only: [:show, :edit, :update, :destroy]
-
+layout 'layouts/admin'
   # GET /email_subscriptions
   # GET /email_subscriptions.json
   def index

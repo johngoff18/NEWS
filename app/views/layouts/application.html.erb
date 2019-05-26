@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	  <meta charset="utf-8">
-	      <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NEWS †</title>
-	<%= render 'application/favicon' %>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body> 
-	  <%= render 'layouts/navbar' %> 
-	  <%= content_for :page_header %>
-	  
-	  
-	  <br>
-	  <div class="container"> 
-		  <div class="columns"> 
-			  <div class="column">  
-				  <%= render 'layouts/notice'%>
-				  
-				  <%= render 'layouts/breadcrumb'%>
-				  <%= yield %> 
-				  <%= render 'layouts/progress'%>
-			
-			  </div> 
-			  <div class="column is-one-third">
-				  <%= render 'layouts/sidebar'%>
-			  </div>
-		  </div>
-		  <%= render 'layouts/tiles'%>
-	  </div>
-	<%= content_for :page_footer %>
-	
-	  <%= render 'layouts/footer'%>
-
-
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>NEWS - Crowd Sourced News</title>
+		<%= render 'application/favicon' %>
+		<%= csrf_meta_tags %>
+		<%= csp_meta_tag %>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	</head>
+	<body>
+		<%= render 'layouts/navbar' %>
+		<%= content_for :page_header %>
+		
+		
+		<br>
+		<div class="container">
+			<div class="columns">
+				<div class="column">
+					<%= render 'layouts/notice'%>
+					<%= render 'layouts/breadcrumb'%>
+					<%= yield %>
+					<%= render 'layouts/progress'%>
+				</div>
+				<div class="column is-one-third">
+					<%= render 'layouts/sidebar'%>
+				</div>
+			</div>
+			<%= render 'layouts/tiles'%>
+		</div>
+		<%= content_for :page_footer %>
+		
+		<%= render 'layouts/footer'%>
+	</body>
 </html>
-

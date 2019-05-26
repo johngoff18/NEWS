@@ -1,23 +1,11 @@
-<p id="notice"><%= notice %></p>
-
-<% content_for :page_header do%>
-<section class="hero is-primary map">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title is-pulled-left">
-        Categories
-      </h1>
-    </div>
-  </div>
-</section>
-<% end %>
-
-<article class="message is-info">
-  <div class="message-header">
-    <p class="montserrat">Categories</p>
-  </div>
-  <div class="message-body">
-   <table class="table is-bordered">
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Categories
+    </p>
+  </header>
+  <div class="card-content">
+    <table class="table is-bordered">
      <thead>
        <tr>
          <th>Name</th>
@@ -37,4 +25,4 @@
    </table>
    <%= link_to 'New Category', new_category_path, class:'button is-primary' %>
   </div>
-</article>
+</div>

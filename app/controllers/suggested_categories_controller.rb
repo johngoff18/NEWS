@@ -1,6 +1,6 @@
 class SuggestedCategoriesController < ApplicationController
   before_action :set_suggested_category, only: [:show, :edit, :update, :destroy]
-
+layout 'layouts/admin'
   # GET /suggested_categories
   # GET /suggested_categories.json
   def index

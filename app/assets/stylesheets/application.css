@@ -89,3 +89,11 @@ body {
 #map {
 	height:800px;
 }
+
+#app {
+  min-height: 100%;
+}
+
+.gray {
+	background-color: #fafafa;
+}

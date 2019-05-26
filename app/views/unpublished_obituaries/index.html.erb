@@ -1,0 +1,42 @@
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Unpublished Obituaries
+    </p>
+  </header>
+  <div class="card-content">
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Death date</th>
+      <th>Thumbnail url</th>
+      <th>Status</th>
+      <th>Comments</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @unpublished_obituaries.each do |unpublished_obituary| %>
+      <tr>
+        <td><%= unpublished_obituary.name %></td>
+        <td><%= unpublished_obituary.death_date %></td>
+        <td><%= unpublished_obituary.thumbnail_url %></td>
+        <td><%= unpublished_obituary.status %></td>
+        <td><%= unpublished_obituary.comments %></td>
+        <td><%= link_to 'Show', unpublished_obituary %></td>
+        <td><%= link_to 'Edit', edit_unpublished_obituary_path(unpublished_obituary) %></td>
+        <td><%= link_to 'Destroy', unpublished_obituary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Unpublished Obituary', new_unpublished_obituary_path %>
+
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<%= form_with(model: unpublished_obituary, local: true) do |form| %>
+  <% if unpublished_obituary.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(unpublished_obituary.errors.count, "error") %> prohibited this unpublished_obituary from being saved:</h2>
+
+      <ul>
+      <% unpublished_obituary.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :death_date %>
+    <%= form.date_select :death_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :thumbnail_url %>
+    <%= form.text_field :thumbnail_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.number_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comments %>
+    <%= form.text_field :comments %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

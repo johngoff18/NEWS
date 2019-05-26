@@ -1,0 +1,43 @@
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Unpublished Image Posts
+    </p>
+  </header>
+  <div class="card-content">
+  
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Thumbnail url</th>
+      <th>Status</th>
+      <th>Comments</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @unpublished_image_posts.each do |unpublished_image_post| %>
+      <tr>
+        <td><%= unpublished_image_post.title %></td>
+        <td><%= unpublished_image_post.description %></td>
+        <td><%= unpublished_image_post.thumbnail_url %></td>
+        <td><%= unpublished_image_post.status %></td>
+        <td><%= unpublished_image_post.comments %></td>
+        <td><%= link_to 'Show', unpublished_image_post %></td>
+        <td><%= link_to 'Edit', edit_unpublished_image_post_path(unpublished_image_post) %></td>
+        <td><%= link_to 'Destroy', unpublished_image_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Unpublished Image Post', new_unpublished_image_post_path %>
+
+  </div>
+</div>

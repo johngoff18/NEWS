@@ -1,0 +1,41 @@
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Unpublished Articles
+    </p>
+  </header>
+  <div class="card-content">
+ 
+
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Status</th>
+      <th>Comments</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @unpublished_articles.each do |unpublished_article| %>
+      <tr>
+        <td><%= unpublished_article.title %></td>
+        <td><%= unpublished_article.content %></td>
+        <td><%= unpublished_article.status %></td>
+        <td><%= unpublished_article.comments %></td>
+        <td><%= link_to 'Show', unpublished_article %></td>
+        <td><%= link_to 'Edit', edit_unpublished_article_path(unpublished_article) %></td>
+        <td><%= link_to 'Destroy', unpublished_article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Unpublished Article', new_unpublished_article_path %>
+
+  </div>
+</div>
