@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'dashboard/index'
+  get 'dashboard/articles'
+  get 'dashboard/images'
+  get 'dashboard/account'
+  get 'dashboard/about'
   resources :unpublished_obituaries
   resources :unpublished_image_posts
   resources :unpublished_articles

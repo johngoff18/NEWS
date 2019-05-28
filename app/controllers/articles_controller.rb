@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
   # before_action :authenticate_user!
   add_breadcrumb "Home", :root_path
   add_breadcrumb "Articles", :articles_path
-layout 'layouts/admin'
+
   # GET /articles
   # GET /articles.json
   def index
